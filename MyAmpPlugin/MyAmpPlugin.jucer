@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="WbJ2Fm" name="MyAmpPlugin" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              headerPath="../../../ext/NeuralAmpModelerCore/NAM&#10;../../../ext/NeuralAmpModelerCore/Dependencies/nlohmann&#10;../../../ext/NeuralAmpModelerCore/Dependencies/eigen"
+              defines="NAM_SAMPLE_FLOAT">
+  <MAINGROUP id="fIJDS0" name="MyAmpPlugin">
+    <GROUP id="{DD9F9506-3303-C733-035E-1AA3CDA73741}" name="NAMCore">
+      <FILE id="d2qvyC" name="activations.cpp" compile="1" resource="0" file="../ext/NeuralAmpModelerCore/NAM/activations.cpp"/>
+      <FILE id="QpHabH" name="activations.h" compile="0" resource="0" file="../ext/NeuralAmpModelerCore/NAM/activations.h"/>
+      <FILE id="xGmUei" name="convnet.cpp" compile="1" resource="0" file="../ext/NeuralAmpModelerCore/NAM/convnet.cpp"/>
+      <FILE id="ysDjMY" name="convnet.h" compile="0" resource="0" file="../ext/NeuralAmpModelerCore/NAM/convnet.h"/>
+      <FILE id="sbOTfE" name="dsp.cpp" compile="1" resource="0" file="../ext/NeuralAmpModelerCore/NAM/dsp.cpp"/>
+      <FILE id="aMCX8j" name="dsp.h" compile="0" resource="0" file="../ext/NeuralAmpModelerCore/NAM/dsp.h"/>
+      <FILE id="MkbKMm" name="get_dsp.cpp" compile="1" resource="0" file="../ext/NeuralAmpModelerCore/NAM/get_dsp.cpp"/>
+      <FILE id="Nd3VlS" name="lstm.cpp" compile="1" resource="0" file="../ext/NeuralAmpModelerCore/NAM/lstm.cpp"/>
+      <FILE id="BsAGL0" name="lstm.h" compile="0" resource="0" file="../ext/NeuralAmpModelerCore/NAM/lstm.h"/>
+      <FILE id="Us7HPv" name="util.cpp" compile="1" resource="0" file="../ext/NeuralAmpModelerCore/NAM/util.cpp"/>
+      <FILE id="XcWGTj" name="util.h" compile="0" resource="0" file="../ext/NeuralAmpModelerCore/NAM/util.h"/>
+      <FILE id="G2QEqj" name="version.h" compile="0" resource="0" file="../ext/NeuralAmpModelerCore/NAM/version.h"/>
+      <FILE id="Pylbpu" name="wavenet.cpp" compile="1" resource="0" file="../ext/NeuralAmpModelerCore/NAM/wavenet.cpp"/>
+      <FILE id="jhiMeU" name="wavenet.h" compile="0" resource="0" file="../ext/NeuralAmpModelerCore/NAM/wavenet.h"/>
+    </GROUP>
+    <GROUP id="{17F87BCF-1091-4529-1EBD-1D1084F01418}" name="Source">
+      <FILE id="lKgmDj" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="QVu6RY" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="AcIw0o" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="sWFf2i" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MyAmpPlugin" enablePluginBinaryCopyStep="1"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MyAmpPlugin" enablePluginBinaryCopyStep="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MyAmpPlugin"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MyAmpPlugin"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

@@ -11,4 +11,5 @@ JUCE Plugin using NAM as a submodule
     * ../../../ext/NeuralAmpModelerCore/Dependencies/eigen
     * ../../../ext/NeuralAmpModelerCore/Dependencies/nlohmann
 7. In Projucer settings, add preprocessor definition: NAM_SAMPLE_FLOAT
+8. look for code annotated with '!! New code !!' to see the bare minimum code to get NAM working
 
