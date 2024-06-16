@@ -3,7 +3,8 @@ JUCE Plugin using NAM as a submodule
 
 1. Create a new repository
 2. add an 'ext' folder
-3. Add NAM Core in the ext folder: git submodule add https://github.com/sdatkinson/NeuralAmpModelerCore
+3. Add NAM Core as a submodule in the ext folder: git submodule add https://github.com/sdatkinson/NeuralAmpModelerCore
+   (you will need to init the submodule recursivity to get NAMs dependencies)
 4. Create a JUCE Plugin project 
 5. In Projucer File Explorer add the source code files from folder: ext/NeuralAmpModelerCore/NAM
 6. In Projucer settings add the following include directories:
